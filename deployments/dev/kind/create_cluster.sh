@@ -21,3 +21,10 @@ echo "Creating the cluster..."
 KIND_EXPERIMENTAL_DOCKER_NETWORK=rwml-34fa-network kind create cluster --config ./kind-with-portmapping.yaml
 
 echo "Script finished successfully!" # Optional: Add a success message
+
+
+# 5: Install Kafka
+./install_kafka.sh
+
+# 6: Install Kafka UI
+./install_kafka_ui.sh
