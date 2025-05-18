@@ -1,2 +1,107 @@
 pau/
 pau/
+
+#################################
+#  General
+#################################
+# Byte‑compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+#################################
+#  Virtual environments
+#################################
+venv/
+.env
+.venv/
+env/
+ENV/
+pip-wheel-metadata/
+pip-selfcheck.json
+
+#################################
+#  Testing
+#################################
+.coverage
+.tox/
+.nox/
+.pytest_cache/
+hypothesis.xml
+.cache/
+coverage.xml
+nosetests.xml
+*.cover
+htmlcov/
+
+#################################
+#  Static analysis
+#################################
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+#################################
+#  Editors / IDEs
+#################################
+#  VS Code
+.vscode/
+#  PyCharm
+.idea/
+#  JetBrains Rider & others
+*.iml
+
+#  Vim / Neovim
+*.swp
+*.swo
+*.un~
+Session.vim
+
+#  Emacs
+*~
+\#*\#
+.\#*
+
+#################################
+#  Logs & misc
+#################################
+*.log
+*.pot
+*.mo
+*.sqlite3
+*.db
+*.ipynb_checkpoints
+
+#################################
+#  macOS / Windows
+#################################
+.DS_Store
+Thumbs.db
+desktop.ini
