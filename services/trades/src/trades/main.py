@@ -29,7 +29,7 @@ def run(
                 # Serialize an event using the defined Topic 
                 message = topic.serialize(
                     #key=event["id"], 
-                    value=event.to_dict()
+                    value=event.to_dict() 
                     )
 
             # Produce a message into the Kafka topic

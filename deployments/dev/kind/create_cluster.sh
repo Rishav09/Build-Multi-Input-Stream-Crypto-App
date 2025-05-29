@@ -24,11 +24,11 @@ echo "Script finished successfully!" # Optional: Add a success message
 
 
 # 5: Install Kafka
-# echo "Installing Kafka"
-# chmod +x ./install_kafka.sh
-# ./install_kafka.sh
+echo "Installing Kafka"
+chmod +x ./install_kafka.sh
+./install_kafka.sh
 
 # # 6: Install Kafka UI
-# echo "Installing Kafka UI"
-# chmod +x ./install_kafka_ui.sh
-# ./install_kafka_ui.sh
+echo "Installing Kafka UI"
+chmod +x ./install_kafka_ui.sh
+./install_kafka_ui.sh
