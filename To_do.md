@@ -5,7 +5,13 @@
 - [*] Implement kraken API and added the data to kafka
 ## Date: May 30th, 2025 Session-2
 - [*] Build a docker image for our 'trades' service
-- []  Deploy this imaage to our dev kubernetes cluster
+- [*]  Deploy this imaage to our dev kubernetes cluster
       -[] Push the image to the docker registry
       -[] Write a deployment.yaml file -> Kubernetes file
       -[] Trigger the deployment with 'kubctl apply f- ... '(manual deploymnt to start with)
+## Data: May 31st, 2025
+-   [] Extract config.paramters with pydantic settings
+-   [] Automatic code linting and formatting with ruff and pre-commit
+    -[] Install ruff and precommit using uv -> 'uv tool install ruff@latest'
+    -[] Set our precommit hook
+    -[] Test if it works
