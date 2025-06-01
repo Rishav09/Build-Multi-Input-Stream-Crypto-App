@@ -1,7 +1,9 @@
+import json
+
+from loguru import logger
 from pydantic import BaseModel
 from websocket import create_connection
-import json
-from loguru import logger
+
 
 class Trade(BaseModel):
     product_id: str
@@ -9,8 +11,9 @@ class Trade(BaseModel):
     quantity: float
     timestamp: str
 
-    def to_dict(self)-> dict:
+    def to_dict(self) -> dict:
         return self.model_dump()
+
 
 class KrakenAPI:
     URL = 'wss://ws.kraken.com/v2'
@@ -35,16 +38,16 @@ class KrakenAPI:
             trades_data = data['data']
         except KeyError as e:
             logger.error(f'No `data` field with trades in the message {e}')
-            return []      
+            return []
         trades = []
         for trade in trades_data:
             trades.append(
-               Trade(
-                   product_id=trade['symbol'],
-                   price=trade['price'],
-                   quantity=trade['qty'],
-                   timestamp=trade['timestamp'],
-               )
+                Trade(
+                    product_id=trade['symbol'],
+                    price=trade['price'],
+                    quantity=trade['qty'],
+                    timestamp=trade['timestamp'],
+                )
             )
         return trades
 
@@ -60,8 +63,8 @@ class KrakenAPI:
                     'params': {
                         'channel': 'trade',
                         'symbol': product_ids,
-                        'snapshot': False
-                    }
+                        'snapshot': False,
+                    },
                 }
             )
         )
