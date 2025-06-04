@@ -15,3 +15,9 @@
     -[] Install ruff and precommit using uv -> 'uv tool install ruff@latest'
     -[] Set our precommit hook
     -[] Test if it works
+## Date: June 1st, 2025
+- [] Boilerplaate code of a streaming aapp with quixstreams.
+- [] Check these fake candles get to the output logic [Kafka UI]
+- [] Implement the actual transformation with the quicxstream window functions
+##  Date: June 2nd, 2025
+- [] Fix the .envrc file in session - 2 20 minutes
